@@ -7,6 +7,7 @@
   --title-color: #ffc2e6;
   --content-color: var(--base-color);
   --accent-color: #ff8dcb;
+  --accent-text-color: #353430;
   --accent-border-hover: rgba(50, 49, 45, 0.4);
   --header-title-shadow: 4px 4px 0 var(--accent-color);
   --footer-title-shadow: 2px 2px 0 #ff0070;
@@ -25,6 +26,7 @@
     --title-color: #ffc2e6;
     --content-color: var(--base-color);
     --accent-color: #ff8dcb;
+    --accent-text-color: #353430;
     --accent-border-hover: rgba(50, 49, 45, 0.4);
     --header-title-shadow: 4px 4px 0 var(--accent-color);
     --footer-title-shadow: 2px 2px 0 #ff0070;
