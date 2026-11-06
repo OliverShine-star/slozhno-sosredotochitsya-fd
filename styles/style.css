@@ -54,6 +54,7 @@
   inset-block-start: calc(var(--main-gap) + 2px);
   inset-inline-end: calc(var(--main-gap) + 28px);
   z-index: 2;
+  display: inline-block;
   color: var(--accent-color);
   font-size: 18px;
   text-transform: uppercase;
@@ -96,7 +97,7 @@
   font-family: inherit;
   font-size: var(--text-size);
   text-transform: lowercase;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
@@ -189,7 +190,7 @@
   font-weight: var(--text-weight);
 }
 
-.main_content-section--two-columns .main_content-title {
+.main_content-section--why .main_content-title {
   align-self: start;
 }
 
@@ -276,24 +277,24 @@
     margin-block-end: 0;
   }
 
-  .main_content-section--two-columns {
+  .main_content-section--why {
     grid-template-columns: 236px minmax(0, 1fr);
   }
 
-  .main_content-section--two-columns > .main_content-description {
+  .main_content-section--why > .main_content-description {
     grid-column: 2;
   }
 
-  .main_content-section--three-columns {
+  .main_content-section--what {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: start;
   }
 
-  .main_content-section--three-columns > .main_content-title {
+  .main_content-section--what > .main_content-title {
     grid-column: 1 / -1;
   }
 
-  .main_content-section--three-columns > .main_content-articles {
+  .main_content-section--what > .main_content-articles {
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -323,7 +324,7 @@
     display: grid;
     max-width: 100%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: 23px minmax(180px, auto) repeat(2, minmax(200px, auto));
+    grid-template-rows: min-content minmax(180px, auto) repeat(2, minmax(200px, auto));
     grid-auto-flow: dense;
     gap: var(--main-gap);
   }
@@ -386,11 +387,11 @@
     width: 315px;
   }
 
-  .main_content-section--two-columns {
+  .main_content-section--why {
     grid-template-columns: 315px minmax(0, 1fr);
   }
 
-  .main_content-section--three-columns {
+  .main_content-section--what {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 

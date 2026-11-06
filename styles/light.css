@@ -33,7 +33,7 @@
     --text-color: var(--base-color);
   }
 
-  :root .header__decor-rec {
+  :root:not(.theme-dark) .header__decor-rec {
     display: none;
   }
 }
